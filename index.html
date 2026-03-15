@@ -2,83 +2,116 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Tran Phong Nha | Portfolio</title>
+<title>Tran Phong Nha | Automation Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
-}
-
 body{
+font-family: 'Inter', sans-serif;
 background:#0f172a;
-color:#e2e8f0;
-line-height:1.6;
+color:#e5e7eb;
+margin:0;
 }
 
 .container{
-max-width:1000px;
+max-width:1100px;
 margin:auto;
 padding:40px;
 }
 
-header{
-text-align:center;
-padding:60px 20px;
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-header h1{
-font-size:40px;
-color:#38bdf8;
-}
-
-header p{
-margin-top:10px;
+nav a{
 color:#94a3b8;
-}
-
-.social a{
-margin:0 10px;
-color:#38bdf8;
+margin-left:20px;
 text-decoration:none;
 }
 
+.hero{
+margin-top:80px;
+display:flex;
+align-items:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.avatar{
+width:150px;
+height:150px;
+border-radius:50%;
+background:#1e293b;
+}
+
+.hero h1{
+font-size:42px;
+margin:0;
+color:white;
+}
+
+.highlight{
+color:#38bdf8;
+}
+
+.hero p{
+margin-top:10px;
+color:#9ca3af;
+}
+
+.button{
+display:inline-block;
+margin-top:20px;
+padding:12px 22px;
+background:#38bdf8;
+color:#0f172a;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+}
+
 .section{
-margin-top:60px;
+margin-top:80px;
 }
 
 .section h2{
-border-left:5px solid #38bdf8;
-padding-left:10px;
 margin-bottom:20px;
+color:#38bdf8;
 }
 
 .card{
 background:#1e293b;
-padding:20px;
+padding:25px;
 border-radius:10px;
 margin-bottom:20px;
 }
 
 .skills span{
 display:inline-block;
-background:#38bdf8;
-color:#0f172a;
-padding:6px 12px;
+background:#334155;
+padding:8px 14px;
 border-radius:20px;
 margin:5px;
 font-size:14px;
 }
 
+.social a{
+margin-right:15px;
+color:#38bdf8;
+text-decoration:none;
+}
+
 footer{
-text-align:center;
 margin-top:80px;
+text-align:center;
 color:#64748b;
 }
 
@@ -90,27 +123,49 @@ color:#64748b;
 
 <div class="container">
 
-<header>
+<nav>
 
-<h1>Trần Phong Nhã</h1>
+<h3>PN</h3>
 
-<p>Automation Engineer | AI Enthusiast | Python Developer</p>
+<div>
 
-<p>Cần Thơ, Việt Nam</p>
-
-<div class="social">
-
-<a href="mailto:phongnhatran2003@gmail.com">Email</a>
-<a href="https://www.facebook.com/phongnhatran2003">Facebook</a>
-<a href="https://x.com/pntr2003">X</a>
-<a href="tel:+84763789366">Phone</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
 
 </div>
 
-</header>
+</nav>
+
+<section class="hero">
+
+<div class="avatar"></div>
+
+<div>
+
+<h1>
+Hi, I'm <span class="highlight">Tran Phong Nha</span>
+</h1>
+
+<p>
+Automation Engineer • Python Developer • AI Enthusiast
+</p>
+
+<p>
+Based in Can Tho, Vietnam
+</p>
+
+<a class="button" href="mailto:phongnhatran2003@gmail.com">
+Contact Me
+</a>
+
+</div>
+
+</section>
 
 
-<section class="section">
+<section id="about" class="section">
 
 <h2>About Me</h2>
 
@@ -118,33 +173,13 @@ color:#64748b;
 
 <p>
 I am a Control Engineering and Automation graduate from Can Tho University of Technology.
-I enjoy working with AI, automation systems, and modern technologies. My interests include
-vibe coding with AI tools, exploring new technologies, gaming, and building smart automation solutions.
-</p>
-
-</div>
-
-</section>
-
-
-<section class="section">
-
-<h2>Education</h2>
-
-<div class="card">
-
-<h3>Can Tho University of Technology</h3>
-
-<p>
-Bachelor of Engineering – Control Engineering and Automation Technology
+I enjoy building automation systems, experimenting with AI-assisted coding,
+and exploring emerging technologies.
 </p>
 
 <p>
-2021 – 2025 | GPA: 3.0 / 4.0
-</p>
-
-<p>
-Graduation Thesis Score: 8 / 10
+My interests include AI tools, automation, IoT systems, and software development.
+I enjoy creating intelligent systems that combine hardware, software, and data.
 </p>
 
 </div>
@@ -152,69 +187,15 @@ Graduation Thesis Score: 8 / 10
 </section>
 
 
-<section class="section">
+<section id="skills" class="section">
 
-<h2>Work Experience</h2>
-
-<div class="card">
-
-<h3>Intel Products Vietnam</h3>
-
-<p>Maintenance Technician (Temporary)</p>
-
-<p>Nov 2025 – Feb 2026</p>
-
-<ul>
-
-<li>Maintained and cleaned circuit boards following standard procedures.</li>
-
-<li>Replaced damaged components and performed preventive maintenance.</li>
-
-<li>Analyzed board stability and proposed maintenance improvements.</li>
-
-</ul>
-
-</div>
-
-</section>
-
-
-<section class="section">
-
-<h2>Project</h2>
-
-<div class="card">
-
-<h3>Rotary Elevator Parking System</h3>
-
-<ul>
-
-<li>Designed a vertical automated parking system.</li>
-
-<li>Used Python + IP camera for QR code recognition.</li>
-
-<li>Connected system with IoT platform for remote vehicle retrieval.</li>
-
-<li>Controlled stepper motors via microcontroller.</li>
-
-<li>Built prototype model to evaluate feasibility.</li>
-
-</ul>
-
-</div>
-
-</section>
-
-
-<section class="section">
-
-<h2>Skills</h2>
+<h2>Tech Stack</h2>
 
 <div class="skills">
 
 <span>Python</span>
-<span>PLC Programming</span>
 <span>Automation</span>
+<span>PLC Programming</span>
 <span>IoT</span>
 <span>AI Assisted Coding</span>
 <span>Microsoft Office</span>
@@ -224,13 +205,27 @@ Graduation Thesis Score: 8 / 10
 </section>
 
 
-<section class="section">
+<section id="projects" class="section">
 
-<h2>Languages</h2>
+<h2>Featured Project</h2>
 
 <div class="card">
 
-<p>English – Intermediate</p>
+<h3>Rotary Elevator Parking System</h3>
+
+<p>
+Designed a smart vertical parking system integrating automation,
+Python image recognition, and IoT communication.
+</p>
+
+<ul>
+
+<li>QR recognition using Python + IP Camera</li>
+<li>Stepper motor control via microcontroller</li>
+<li>IoT platform for remote vehicle retrieval</li>
+<li>Built prototype model for real-world testing</li>
+
+</ul>
 
 </div>
 
@@ -239,18 +234,45 @@ Graduation Thesis Score: 8 / 10
 
 <section class="section">
 
-<h2>Interests</h2>
+<h2>Experience</h2>
 
 <div class="card">
 
-<ul>
+<h3>Intel Products Vietnam</h3>
 
-<li>Vibe coding using AI tools</li>
-<li>Gaming</li>
-<li>Exploring new technologies</li>
-<li>Working with AI systems</li>
+<p>Maintenance Technician (Temporary)</p>
 
-</ul>
+<p>
+Maintained and repaired circuit boards, performed preventive maintenance,
+and evaluated hardware stability to improve reliability.
+</p>
+
+</div>
+
+</section>
+
+
+<section id="contact" class="section">
+
+<h2>Contact</h2>
+
+<div class="card">
+
+<p>Email: phongnhatran2003@gmail.com</p>
+
+<p>Phone: +84 763 789 366</p>
+
+<p>Location: Can Tho, Vietnam</p>
+
+<div class="social">
+
+<a href="https://www.facebook.com/phongnhatran2003">Facebook</a>
+
+<a href="https://x.com/pntr2003">X</a>
+
+<a href="mailto:phongnhatran2003@gmail.com">Email</a>
+
+</div>
 
 </div>
 
@@ -266,4 +288,5 @@ Graduation Thesis Score: 8 / 10
 </div>
 
 </body>
+
 </html>
